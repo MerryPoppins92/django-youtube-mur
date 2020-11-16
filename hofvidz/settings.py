@@ -26,7 +26,7 @@ SECRET_KEY = 'rxvfzl7^etnqdxs24pw0+9ul9@acdnpuz0m9o4o46ka9f*%d*j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['still-tor-06332.herokuapp.com']
+ALLOWED_HOSTS = ['still-tor-06332.herokuapp.com','mon-mur-youtube.com','www.mon-mur-youtube.com']
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'

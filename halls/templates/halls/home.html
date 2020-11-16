@@ -29,7 +29,7 @@
 	{% endfor %}		
 
  	<h1 class="text-center">Les dernieres videos</h1>
- {% for hall in popular_halls %}
+ {% for hall in recent_halls %}
  <h2><a href="{% url 'detail_hall' hall.id %}">{{ hall.title }}</a></h2>
 		<div class="row">
 			

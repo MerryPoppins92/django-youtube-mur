@@ -1,7 +1,7 @@
 {% extends 'halls/base.html' %}
 {% block content %}
 <div class="container">
-<h2>Edit Hall of Fame</h2>
+<h2>Editer votre mur</h2>
 <form method="POST">
 {% csrf_token %}
 {% load widget_tweaks %}
@@ -12,9 +12,9 @@
 {% render_field field class="form-control" %}
 </div>
 {% endfor %}
-<button type="submit" class="btn btn-primary">Save</button>
+<button type="submit" class="btn btn-primary">Enregistrer</button>
 </form>
-<a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger mt-3">Delete this home of fame</a>
+<a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger mt-3">Supprimer cette categorie</a>
 </div>
 
 {% endblock %}

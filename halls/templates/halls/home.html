@@ -2,15 +2,15 @@
   {% block content %}
   <section class="jumbotron text-center">
  <div class="container">
- 	<h1 class="jumbotron-heading">test</h1>
- 	<p class="lead text-muted">You know they are</p>
+ 	<h1 class="jumbotron-heading">Vous souhaitez retrouver rapidement vos videos YouTube preferees?</h1>
+ 	<p class="lead text-muted">Pour cela, il suffit de creer un compte! Puis ajoutez en quelques clics vos videos et classez les par categories!</p>
  	<p>
- 		<a href="{% url 'create_hall' %}" class="btn btn-primary">Create your hall of fame</a>
+ 		<a href="{% url 'create_hall' %}" class="btn btn-primary">Creez votre mur de videos</a>
  	</p>
   </div>
   </section>
  <div class="container">
- 	<h1 class="text-center">Popular Videos</h1>
+ 	<h1 class="text-center">Videos Populaires</h1>
  {% for hall in popular_halls %}
  <h2><a href="{% url 'detail_hall' hall.id %}">{{ hall.title }}</a></h2>
 		<div class="row">
@@ -28,7 +28,7 @@
 		</div>
 	{% endfor %}		
 
- 	<h1 class="text-center">Recent Videos</h1>
+ 	<h1 class="text-center">Les dernieres videos</h1>
  {% for hall in popular_halls %}
  <h2><a href="{% url 'detail_hall' hall.id %}">{{ hall.title }}</a></h2>
 		<div class="row">

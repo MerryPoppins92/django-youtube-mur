@@ -1,11 +1,11 @@
 {% extends 'halls/base.html' %}
 {% block content %}
 <div class="container">
-	<h2>Are you sure you want to delete this video?</h2>
+	<h2>Etes-vous sur de vouloir supprimer cette video?</h2>
 	<form method="POST">
 	{% csrf_token %}
 	{{ form.as_p }}
-	<button type="submit" class="btn btn-danger">Delete</button>
+	<button type="submit" class="btn btn-danger">Supprimer</button>
 	</form>
 		<div class="row">
 

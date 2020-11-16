@@ -4,9 +4,9 @@
 <h1>{{ hall.title }}</h1>
 <h4 class="text-muted">{{ hall.user.username }}</h4>
 {% if user.id == hall.user.id %}
-<a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger">Delete</a>
-<a href="{% url 'update_hall' hall.id %}" class="btn btn-primary">Edit</a>
-<a href="{% url 'add_video' hall.id %}" class="btn btn-primary">Add Video</a>
+<a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger">Supprimer</a>
+<a href="{% url 'update_hall' hall.id %}" class="btn btn-primary">Modifier</a>
+<a href="{% url 'add_video' hall.id %}" class="btn btn-primary">Ajouter une video</a>
 {% endif %}
 <div class="row">
 
@@ -17,7 +17,7 @@
 <div class="card-body">
 <p class="card-text">{{ video.title }}</p>
 {% if user.id == hall.user.id %}
-<a href="{% url 'delete_video' video.id %}" class="btn btn-danger">Delete</a>
+<a href="{% url 'delete_video' video.id %}" class="btn btn-danger">Supprimer</a>
 {% endif %}
 </div>
 </div>

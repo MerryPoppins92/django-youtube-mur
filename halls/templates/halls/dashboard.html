@@ -2,15 +2,15 @@
   {% block content %}
 <div class="container">
 	<div class="text-center">
-		<h1>{{ user.username }}'s Hall of fames</h1>
-		<a href="{% url 'create_hall' %}" class="btn btn-primary">Create new hall of fame</a>
+		<h1>Le mur de {{ user.username }}</h1>
+		<a href="{% url 'create_hall' %}" class="btn btn-primary">Creer un nouveau mur</a>
 	</div>
 		
 		{% for hall in halls %}
 		<h2><a href="{% url 'detail_hall' hall.id %}">{{ hall.title }}</a></h2>
-		<a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger">Delete</a>
-		<a href="{% url 'update_hall' hall.id %}" class="btn btn-primary">Edit</a>
-		<a href="{% url 'add_video' hall.id %}" class="btn btn-primary">Add Video</a>
+		<a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger">Supprimer</a>
+		<a href="{% url 'update_hall' hall.id %}" class="btn btn-primary">Editer</a>
+		<a href="{% url 'add_video' hall.id %}" class="btn btn-primary">Ajouter une video</a>
 		<div class="row">
 			
 			{% for video in hall.video_set.all|slice:"0:3" %}

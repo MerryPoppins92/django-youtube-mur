@@ -1,7 +1,7 @@
 {% extends 'halls/base.html' %}
 {% block content %}
 <div class="container">
-  <h2>Create Hall of Fame</h2>
+  <h2>Creater un mur</h2>
     <form method="POST">
     {% csrf_token %}
     {% load widget_tweaks %}
@@ -12,7 +12,7 @@
       {% render_field field class="form-control" %}
       </div>
     {% endfor %}
-    <button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-primary">Creer</button>
     </form>
 
 </div>
